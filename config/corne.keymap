@@ -40,12 +40,12 @@
 
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  %  |  {  |  }  |  `   |   |      |        |      |      |       | C_SLEEP|
+// |  TAB |  !  |  %  |  {  |  }  |  `   |   |      |        |      |      |       | K_PWR  |
 // | ESC  |  @  |  $  |  (  |  )  |  -   |   |      | RSHIFT | RGUI | RALT | RCTRL |        |
 // | SHFT |  #  |  ^  |  [  |  ]  |  &   |   | BT_0 |  BT_1  | BT_2 | BT_3 | BT_4  | BT_CLR |
 //                    |     |     | BSPC |   | ENT  | SPC    |      |
                         bindings = <
-   &kp TAB    &kp EXCL &kp PRCNT &kp LBRC  &kp RBRC  &kp GRAVE      &trans       &trans       &trans       &trans       &trans       &kp C_SLEEP
+   &kp TAB    &kp EXCL &kp PRCNT &kp LBRC  &kp RBRC  &kp GRAVE      &trans       &trans       &trans       &trans       &trans       &kp K_PWR
    &kp ESC    &kp AT   &kp DLLR  &kp LPAR  &kp RPAR  &kp MINUS      &trans       &kp RSHIFT   &kp RGUI     &kp RALT     &kp RCTRL    &trans
    &kp LSHFT  &kp HASH &kp CARET &kp LBKT  &kp RBKT  &kp AMPS       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
  		                 &trans    &trans    &kp BSPC       &kp RET      &kp SPC      &trans
