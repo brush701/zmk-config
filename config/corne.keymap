@@ -43,7 +43,7 @@
 // |  TAB |  !  |  %  |  {  |  }  |  `   |   |      |        |      |      |       | K_PWR  |
 // | ESC  |  @  |  $  |  (  |  )  |  -   |   |      | RSHIFT | RGUI | RALT | RCTRL |        |
 // | SHFT |  #  |  ^  |  [  |  ]  |  &   |   | BT_0 |  BT_1  | BT_2 | BT_3 | BT_4  | BT_CLR |
-//                    |     |     | BSPC |   | ENT  | SPC    |      |
+//                    |     |     | DEL  |   | ENT  | SPC    |      |
                         bindings = <
    &kp TAB    &kp EXCL &kp PRCNT &kp LBRC  &kp RBRC  &kp GRAVE      &trans       &trans       &trans       &trans       &trans       &kp K_PWR
    &kp ESC    &kp AT   &kp DLLR  &kp LPAR  &kp RPAR  &kp MINUS      &trans       &kp RSHIFT   &kp RGUI     &kp RALT     &kp RCTRL    &trans
