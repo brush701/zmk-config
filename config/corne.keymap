@@ -83,15 +83,15 @@
 		
 		mouse_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |       |      | TO 0 |        |     |   |      |       |     |       |      |     |   
-// | ESC  |       |      | RCLK |  LCLK  |     |   |      |       |     |       |      |     |   
-// |      | UNDO  | CUT  | COPY | PASTE  |    |   |      |       |     |       |      |     |   
-//                |      |      |  MCLK  |     |   | ENT  |  SPC  |     |
+// | TAB  |       |      | TO 0  |        |     |   |      |       |     |       |      |     |   
+// | ESC  |       |      | RCLK  |  LCLK  |     |   |      |       |     |       |      |     |   
+// |      | UNDO  | CUT  | COPY  | PASTE  |    |   |      |       |     |       |      |     |   
+//                |WHL_UP|WHL_DWN|  MCLK  |     |   | ENT  |  SPC  |     |
                         bindings = <
    &kp TAB   &trans    &trans     &to 0     &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
    &kp ESC   &trans    &trans     &mkp RCLK &mkp LCLK  &trans      &trans        &trans       &trans      &trans        &trans  &trans 
    &trans    &kp LG(Z) &kp LG(X)  &kp LG(C) &kp LG(V)  &trans      &trans        &trans       &trans      &trans        &trans  &trans
-                                  &trans    &mkp MCLK  &kp BSPC    &kp RET       &kp SPC      &trans
+                   &mwh SCROLL_UP  &mwh SCROLL_DOWN &mkp MCLK      &kp BSPC    &kp RET       &kp SPC      &trans
                         >;
                 };
         };
