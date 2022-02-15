@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
 	behaviors {
@@ -20,6 +21,15 @@
 	    bindings = <&kp>, <&kp>;
             };
         };
+	
+	combos {
+        compatible = "zmk,combos";
+        combo_mouse_layer {
+            timeout-ms = <100>;
+            key-positions = <35 38>;
+            bindings = <&to 4>;
+        };
+    };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -77,6 +87,20 @@
    &kp ESC   &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans      &kp LEFT      &kp DOWN     &kp UP      &kp RIGHT     &trans  &trans 
    &kp LSHFT &kp CAPS   &trans    &trans    &trans     &trans      &kp LG(LEFT)  &kp LG(DOWN) &kp LG(UP)  &kp LG(RIGHT) &trans  &trans
                                   &trans    &trans     &kp BSPC    &kp RET       &kp SPC      &trans
+                        >;
+                };
+		
+		mouse_layer {
+// -----------------------------------------------------------------------------------------
+// |      |       |      |      |        |     |   |      |       |     |       |      |     |   
+// |TO(0) |       |      | RCLK |  LCLK  |     |   |      |       |     |       |      |     |   
+// |      |       |      |      |        |     |   |      |       |     |       |      |     |   
+//                |      |      |  MCLK  |     |   | ENT  |  SPC  |     |
+                        bindings = <
+   &trans    &trans    &trans     &trans    &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
+   &to(0)    &trans    &trans     &mmv RCLK &mmv LCLK  &trans      &trans        &trans       &trans      &trans        &trans  &trans 
+   &trans    &trans    &trans     &trans    &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
+                                  &trans    &mmv MCLK  &kp BSPC    &kp RET       &kp SPC      &trans
                         >;
                 };
         };
