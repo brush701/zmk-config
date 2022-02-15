@@ -98,7 +98,7 @@
 //                |      |      |  MCLK  |     |   | ENT  |  SPC  |     |
                         bindings = <
    &trans    &trans    &trans     &trans    &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
-   &to(0)    &trans    &trans     &mmv RCLK &mmv LCLK  &trans      &trans        &trans       &trans      &trans        &trans  &trans 
+   &to 0    &trans    &trans     &mmv RCLK &mmv LCLK  &trans      &trans        &trans       &trans      &trans        &trans  &trans 
    &trans    &trans    &trans     &trans    &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
                                   &trans    &mmv MCLK  &kp BSPC    &kp RET       &kp SPC      &trans
                         >;
