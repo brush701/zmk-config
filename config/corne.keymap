@@ -90,7 +90,7 @@
    &kp TAB   &trans    &trans     &to 0     &trans     &trans      &trans        &trans       &trans      &trans        &trans  &trans
    &kp ESC   &trans    &trans     &mkp RCLK &mkp LCLK  &trans      &trans        &trans       &trans      &trans        &trans  &trans 
    &trans    &kp LG(Z) &kp LG(X)  &kp LG(C) &kp LG(V)  &trans      &trans        &trans       &trans      &trans        &trans  &trans
-                                  &trans    &trans     &mkp MCLK   &kp BSPC    &kp RET       &kp SPC      &trans
+                                  &trans    &mkp MCLK  &kp BSPC    &kp RET       &kp SPC      &trans
                         >;
                 };
         };
