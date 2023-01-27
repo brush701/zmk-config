@@ -19,6 +19,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+	td: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE;
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hm <&kp> <&kp>>, <&kp>;
+    	};
     };
 
         keymap {
@@ -32,7 +39,7 @@
 //              | MO(3) | MO(2) | BSPC  |   | ENT | SPC  | MO(1) |
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T      &kp Y   &kp U         &kp I        &kp O      &kp P          &kp BSLH
-   &kp ESC   &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHIFT F &kp G      &kp H   &hm RSHIFT J  &hm RGUI K   &hm RALT L &hm RCTRL SEMI &kp SQT
+   &kp ESC   &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHIFT F &kp G      &kp H   &td RSHIFT J  &hm RGUI K   &hm RALT L &hm RCTRL SEMI &kp SQT
    &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B      &kp N   &kp M         &kp COMMA    &kp DOT    &kp FSLH       &caps_word
                                     &mo 3      &mo 2        &kp BSPC   &kp RET &kp SPC       &mo 1
                         >;
