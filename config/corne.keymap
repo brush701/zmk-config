@@ -79,4 +79,5 @@
                                   &trans    &trans     &kp BSPC    &kp RET       &kp SPC      &trans
                         >;
                 };
+        };
 };
